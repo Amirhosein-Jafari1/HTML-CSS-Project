@@ -1,0 +1,92 @@
+.headerWeb {
+            width: 100vw;
+            height: 20%;
+            background: linear-gradient(to left, rgb(20, 20, 20), rgba(17, 0, 255, 0.361));
+            text-align: center;
+        }
+
+        .title {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            line-height: 105px;
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin-top: 40px;
+            background-color: crimson;
+            border-radius: 20px;
+            box-shadow: 0 0 20px white;
+            border-top: 6px double yellow;
+            border-bottom: 5px groove lightblue;
+            border-left: 6px double yellow;
+            border-right: 5px groove lightblue;
+        }
+
+        #main {
+            width: 100vw;
+            height: 60%;
+            background-blend-mode: overlay;
+            background: url(../img/fox.jpeg)  center / cover no-repeat , linear-gradient(45deg, rgba(0, 0, 255, 0.504) , rgba(255, 0, 0, 0.269), rgba(0, 0, 0, 0.439));
+            padding-top: 1px;
+            text-align: center;
+        }
+
+        body{
+            height: 100vh;
+            background-color: rgb(170,170,170);
+        }
+        
+        .test{
+            width: 300px;
+            height: 150px;
+            background-color: beige;
+            margin: 20px 0 0 20px;
+            padding: 20px 0 0 20px;
+        }
+
+        .galleryBox{
+            width: 700px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .imageSection1, .imageSection2, .imageSection3{
+            width: 30%;
+            height: 100%;
+            display: inline-block;
+            padding: 0 5px 0 5px;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            margin: 10px 0 10px 0;
+            border-radius: 5px;
+        }
+
+        .imageSection2 .image1{
+            margin: 20px 0 20px 0;
+        }
+        .imageSection2 .image2{
+            margin: 20px 0 20px 0;
+        }
+        .imageSection2 .image3{
+            margin: 20px 0 20px 0;
+        }
+
+        .paragraphSection{
+            display: inline-block;
+            width: 25%;
+            background-color: rgba(255, 100, 149, 0.696);
+            border-radius: 10px;
+            padding: 0 20px 0 20px; 
+            vertical-align: top;
+            text-align: justify;
+        }
+
+        .paragraphSection h1{
+            text-shadow: 0 0 15px white;
+        }
