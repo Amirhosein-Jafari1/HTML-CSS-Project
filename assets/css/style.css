@@ -1,92 +1,183 @@
-.headerWeb {
-            width: 100vw;
-            height: 20%;
-            background: linear-gradient(to left, rgb(20, 20, 20), rgba(17, 0, 255, 0.361));
-            text-align: center;
-        }
+    @font-face {
+        font-family: yekan;
+        src: url(../font/yekan-font/Yekan.woff);
+        src: url(../font/yekan-font/Yekan.ttf);
+    }
+    @font-face {
+        font-family: vazir;
+        src: url(../font/vazir-font-v18.0.0/Vazir.woff);
+        src: url(../font/vazir-font-v18.0.0/Vazir.woff2);
+    }
+    
+    
+    .headerWeb {
+        width: 100vw;
+        height: 20%;
+        background: linear-gradient(to left, rgb(20, 20, 20), rgba(17, 0, 255, 0.361));
+        text-align: center;
+    }
+    .headerWeb .title {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        line-height: 105px;
+        width: 200px;
+        height: 100px;
+        display: inline-block;
+        margin-top: 40px;
+        background-color: crimson;
+        border-radius: 20px;
+        box-shadow: 0 0 20px white;
+        border-top: 6px double yellow;
+        border-bottom: 5px groove lightblue;
+        border-left: 6px double yellow;
+        border-right: 5px groove lightblue;
+    }
+    #main {
+        width: 100vw;
+        height: 60%;
+        background-blend-mode: overlay;
+        background: url(../img/fox.jpeg)  center / cover no-repeat , linear-gradient(45deg, rgba(0, 0, 255, 0.504) , rgba(255, 0, 0, 0.269), rgba(0, 0, 0, 0.439));
+        padding-top: 1px;
+        text-align: center;
+    }
+    body{
+        height: 100vh;
+        background-color: rgb(208, 208, 208);
+        text-align: center;
+        font-family: vazir;
+        direction: rtl;
+    }
+    
+    .test{
+        width: 300px;
+        height: 150px;
+        background-color: beige;
+        margin: 20px 0 0 20px;
+        padding: 20px 0 0 20px;
+    }
+    .galleryBox{
+        width: 700px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: inline-block;
+        border-radius: 10px;
+    }
+    .imageSection1, .imageSection2, .imageSection3{
+        width: 30%;
+        height: 100%;
+        display: inline-block;
+        padding: 0 5px 0 5px;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        margin: 10px 0 10px 0;
+        border-radius: 5px;
+    }
+    .imageSection2 .image1{
+        margin: 20px 0 20px 0;
+    }
+    .imageSection2 .image2{
+        margin: 20px 0 20px 0;
+    }
+    .imageSection2 .image3{
+        margin: 20px 0 20px 0;
+    }
+    .paragraphSection{
+        display: inline-block;
+        width: 25%;
+        background-color: rgba(255, 100, 149, 0.696);
+        border-radius: 10px;
+        padding: 0 20px 0 20px; 
+        vertical-align: top;
+        text-align: justify;
+    }
+    .paragraphSection h1{
+        text-shadow: 0 0 15px white;
+    }
+    .registerSection{
+        width: 25%;
+        background-color: white;
+        display: inline-block;
+        text-align: justify;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 20px;
 
-        .title {
-            color: white;
-            font-size: 20px;
-            text-align: center;
-            line-height: 105px;
-            width: 200px;
-            height: 100px;
-            display: inline-block;
-            margin-top: 40px;
-            background-color: crimson;
-            border-radius: 20px;
-            box-shadow: 0 0 20px white;
-            border-top: 6px double yellow;
-            border-bottom: 5px groove lightblue;
-            border-left: 6px double yellow;
-            border-right: 5px groove lightblue;
-        }
+    }
+    .registerSection h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        display: inline-block;
+        background: linear-gradient(to right, #FAFF00, #00E0FF);
+        background-clip: text;
+        color: rgba(0, 0, 0, 0.1);
+    }
+    .registerSection span{
+        color: red;
+    }
 
-        #main {
-            width: 100vw;
-            height: 60%;
-            background-blend-mode: overlay;
-            background: url(../img/fox.jpeg)  center / cover no-repeat , linear-gradient(45deg, rgba(0, 0, 255, 0.504) , rgba(255, 0, 0, 0.269), rgba(0, 0, 0, 0.439));
-            padding-top: 1px;
-            text-align: center;
-        }
+    .formSection{
+        text-align: center;
+    }
+    .formSection .halfInput{
+        display: inline-block;
+        width: 49%;
+        text-align: justify;
+    }
+    .formSection .halfInput input{
+         box-shadow: 0 0 8px black ;
+    }
+    .formSection .lineInput{
+        width: 100%;
+        text-align: justify;
+        margin-top: 20px;
+    }
+    .formSection .lineInput input{
+        box-shadow: 0 0 8px black;
+    }
+    .checkboxSection , .radioSection {
+        margin-top: 10px;
+        text-align: justify;
+    }
+    
+    .checkboxSection label{
+        vertical-align: super;
+        font-size: 15px;
+    }
+    .checkboxSection input{
+        width: 15px;
+        vertical-align: sub;
+    }
 
-        body{
-            height: 100vh;
-            background-color: rgb(170,170,170);
-        }
-        
-        .test{
-            width: 300px;
-            height: 150px;
-            background-color: beige;
-            margin: 20px 0 0 20px;
-            padding: 20px 0 0 20px;
-        }
+    input{
+        width: 90%;
+        border: none;
+        background: linear-gradient(to right, #FF8A00, #DBFF00);
+        height: 30px;
+        border-radius: 100px;
+        outline: none;
+        font-size: 16px;
+        padding: 0  6px;
+       
+    }
 
-        .galleryBox{
-            width: 700px;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.5);
-            display: inline-block;
-            border-radius: 10px;
-        }
-
-        .imageSection1, .imageSection2, .imageSection3{
-            width: 30%;
-            height: 100%;
-            display: inline-block;
-            padding: 0 5px 0 5px;
-        }
-
-        img {
-            width: 100%;
-            object-fit: cover;
-            margin: 10px 0 10px 0;
-            border-radius: 5px;
-        }
-
-        .imageSection2 .image1{
-            margin: 20px 0 20px 0;
-        }
-        .imageSection2 .image2{
-            margin: 20px 0 20px 0;
-        }
-        .imageSection2 .image3{
-            margin: 20px 0 20px 0;
-        }
-
-        .paragraphSection{
-            display: inline-block;
-            width: 25%;
-            background-color: rgba(255, 100, 149, 0.696);
-            border-radius: 10px;
-            padding: 0 20px 0 20px; 
-            vertical-align: top;
-            text-align: justify;
-        }
-
-        .paragraphSection h1{
-            text-shadow: 0 0 15px white;
-        }
+    button{
+        width: 50%;
+        height: 30px;
+        background-color: #FF8A00;
+        border: none;
+        border-radius: 100px;
+        color: white;
+        margin-top: 10px;
+        font-family: inherit;
+        cursor: pointer;
+    }
+    button:hover{
+        box-shadow: 0 0 10px blue;
+    }
+    button:focus{
+        box-shadow: 0 0 10px white inset;
+        color: black;
+    }

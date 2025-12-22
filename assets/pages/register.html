@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="registerSection">
+        <div class="title">
+            <h1>ثبت نام</h1>
+            <h4>بیایید <span>حساب کاربری</span> خود را ایجاد کنیم</h4>
+        </div>
+
+        <form class="formSection" action="/index.html">
+
+            <div class="halfInput">
+                <label >نام</label><br>
+                <input type="text" required>
+            </div>
+            <div class="halfInput">
+                <label>نام خانوادگی</label><br>
+                <input type="text" required>
+            </div>
+
+            
+            <div class="radioSection">
+                <label>جنسیت</label>
+
+                <div class="radioBox">
+                    <div class="checkboxSection">
+                        <label>مذکر</label>
+                        <input type="radio" name="gender">
+                        <label>مونث</label>
+                        <input type="radio" name="gender">
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+
+            <div class="lineInput">
+                <label>ایمیل</label><br>
+                <input type="email">
+            </div>
+            <div class="lineInput">
+                <label>تایپ مجدد ایمیل</label><br>
+                <input type="email">
+            </div>
+            <div class="lineInput">
+                <label>رمزعبور</label><br>
+                <input type="password" required>
+            </div>
+            <div class="lineInput">
+                <label>تایپ مجدد رمز عبور</label><br>
+                <input type="password" required>
+            </div>
+            <div class="checkboxSection">
+                <input type="checkbox" required>
+                <label>من قوانین و مقررات را می پذیرم</label><br>
+            </div>
+
+            <div>
+                <button type="submit">ثبت نام</button>
+            </div>
+            
+        </form>
+        
+    </section>
+</body>
+</html>
