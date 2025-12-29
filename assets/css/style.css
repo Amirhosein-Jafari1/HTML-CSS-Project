@@ -96,9 +96,14 @@ img {
 .paragraphSection h1{
     text-shadow: 0 0 15px white;
 }
+a{
+    color: white;
+}
+
+/*استایل های فرم ثبت نام*/
 
 .registerSection{
-    width: 370px;
+    width: 20%;
     background: linear-gradient(180deg, black, burlywood);
     display: inline-block;
     border-radius: 5px;
@@ -132,10 +137,10 @@ input{
     padding-inline: 9px;
     color: white;
     outline: none;
+    font-family: inherit;
 }
 input::placeholder{
     font-size: 15px;
-    font-family: vazir;
     color: white;
 }
 
@@ -187,4 +192,20 @@ button:hover{
 .haveAnAccount a{
     color: rgba(0, 0, 0, 0.789);
     font-weight: bold;
+}
+
+@media (max-width: 412px) {
+    .registerSection{
+        width:90%;
+        padding:20px 5px;
+    }
+    .registerSection .halfInput{
+        width: 45%;
+    }
+    input{
+        width: 90%;
+    }
+    button{
+        width: 80%;
+    }
 }
