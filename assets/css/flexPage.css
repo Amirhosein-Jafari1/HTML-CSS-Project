@@ -1,0 +1,172 @@
+@font-face {
+    font-family: vazirB;
+    src: url("/assets/font/vazir-font-v18.0.0/Vazir-Bold.woff");
+    src: url("/assets/font/vazir-font-v18.0.0/Vazir-Bold.woff2");
+}
+@font-face {
+    font-family: vazir;
+    src: url("/assets/font/vazir-font-v18.0.0/Vazir.woff");
+    src: url("/assets/font/vazir-font-v18.0.0/Vazir.woff2");
+}
+@font-face {
+    font-family: vazirM;
+    src: url("/assets/font/vazir-font-v18.0.0/Vazir-Medium.woff");
+    src: url("/assets/font/vazir-font-v18.0.0/Vazir-Medium.woff2");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: vazir;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+ /* header section style */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: vazirB;
+    background-color: #272728;
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul{
+    list-style: none;
+    background-color: royalblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: all 0.6s;
+    display: inline-block
+}
+
+.menu a:hover{
+    color: rgb(229, 255, 0);
+    transform: rotate(360deg);
+}
+
+/* main content style */
+
+.main-content{
+    padding: 20px;
+    text-align: center;
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main-content h1{
+    color: #fff;
+    margin: 15px 0 20px;
+    font-size: 30px;
+
+}
+
+.product-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    width: 80%;
+}
+
+.product-card{
+    background-color: #f9f9f9;
+    border: 1px solid #949292;
+    border-radius: 8px;
+    padding: 10px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    transition: all 0.3s;
+}
+
+.product-card:hover{
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+.product-image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 150px;
+}
+
+.product-price{
+    color: #e04242;
+    font-size: 16px;
+}
+
+.buy-button{
+    background-color: #04d159;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: vazirM;
+    transition: all 0.5s;
+}
+
+.buy-button:hover{
+    transform: scale(1.2);
+}
+
+.footer{
+    background-color: #272728;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    font-family: vazirB;
+}
+
+@media (max-width:768px) {
+    .product-card-container{
+        flex-direction: column;
+    }
+
+    .product-card{
+        width: 100%;
+    }
+
+    .menu{
+        display: none;
+    }
+}

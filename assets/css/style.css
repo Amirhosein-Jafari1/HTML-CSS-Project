@@ -87,7 +87,7 @@ img {
 .paragraphSection{
     display: inline-block;
     width: 25%;
-    background-color: rgba(255, 100, 149, 0.696);
+    background-color: rgba(100, 255, 242, 0.604);
     border-radius: 10px;
     padding: 0 20px 0 20px; 
     vertical-align: top;
@@ -208,4 +208,30 @@ button:hover{
     button{
         width: 80%;
     }
+
+    /* index page */
+
+    body{
+       padding: 0;
+    }
+    #main{
+        height: auto;
+        background: linear-gradient(to top, rgb(20, 20, 20), rgba(17, 0, 255, 0.361));
+    }
+
+    .headerWeb{
+        background: linear-gradient(to bottom, rgb(20, 20, 20), rgba(17, 0, 255, 0.361));
+    }
+    .paragraphSection{
+        width: 80%;
+    }
+
+    .galleryBox{
+        width: 85%;
+    }
+
+    .imageSection1 , .imageSection2, .imageSection3{
+        width: 85%;
+    }
 }
+
