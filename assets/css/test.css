@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000dc;
+}
+
+.mediaBox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.videoBox{
+    width: 70%;
+    border-radius: 2rem;
+    overflow: hidden;
+    outline: 0.4rem dashed bisque;
+    outline-offset: 0.5rem;
+    height: 50vh;
+    position: relative;
+}
+
+.videoBox video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.videoBox button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10rem;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    box-shadow: 0 0 1rem black;
+    bottom: 2rem;
+    background-color: bisque;
+}
+
+.musicBox{
+    display: flex;
+    gap: 1rem 5rem;
+}
+
+.musicItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap: 1rem;
+    background-color: rgb(214, 122, 8);
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 0 1rem bisque inset;
+    outline: 0.2rem bisque solid;
+    outline-offset: 0.4rem;
+}
+
+.musicItem img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0 0 1rem  white;
+}
+
+
+
+
+@media (max-width : 768px) {
+    .videoBox {
+        height: 25vh;
+    }
+
+    .musicBox{
+        flex-direction: column;
+    }
+}
